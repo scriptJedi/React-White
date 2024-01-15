@@ -1,0 +1,14 @@
+.footer__container {
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copy {
+}
+
+.footer__link {
+}
