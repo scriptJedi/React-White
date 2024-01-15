@@ -2,6 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './styles/style.css'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee, faCheckSquare, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faCoffee, faCheckSquare, faTimes);
+
+// import Header from "./components/Header";
 
 function App() {
   const [count, setCount] = useState(0)
