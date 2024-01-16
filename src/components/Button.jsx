@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../assets/button.css';
+import '../assets/Button.css';
 import { useMediaQuery } from '@react-hook/media-query';
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({backgroundColor, size, label, ...props }) => {
+// eslint-disable-next-line react/prop-types
+export const Button = ({backgroundColor, size, label, mode, ...props }) => {
   const isSmallScreen = useMediaQuery('(max-width: 767px)');
   const calculateSize = isSmallScreen ? 'small' : size;
-  // const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const buttonMode = mode === 'primary' ? 'primary' : 'secondary';
   return (
     <button
       type="button"
-      className={['button', `button--${calculateSize}`].join(' ')}
+      className={['button',`button--${buttonMode}`, `button--${buttonMode}--${calculateSize}`].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -47,7 +48,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   backgroundColor: null,
-  primary: false,
+  mode: 'primary',
   size: 'medium',
   onClick: undefined,
 };

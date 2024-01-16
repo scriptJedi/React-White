@@ -1,7 +1,14 @@
+footer {
+
+}
+
 .footer__container {
+
 }
 
 .footer__wrapper {
+    min-height: 50px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

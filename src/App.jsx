@@ -1,47 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import './assets/style.css'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee, faCheckSquare, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState, useEffect } from 'react';
 
+// import icons
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {faCoffee, faCheckSquare, faTimes} from '@fortawesome/free-solid-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 library.add(faCoffee, faCheckSquare, faTimes);
 
-// import Header from "./components/Header";
+// import components
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+
+// import blocks
+import Hero from "./blocks/Hero.jsx";
+
+// import styles
+import './assets/App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <div className="wrapper">
+                <Header/>
+                <main className="page">
+                    <Hero/>
+                </main>
+                <Footer/>
+            </div>
+        </>
+    )
 }
 
 export default App
-
 
 
 // // App.js

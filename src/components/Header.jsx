@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import {Button} from './Button';
-import '../assets/style.css';
-import '../assets/header.css';
+import '../assets/App.css';
+import '../assets/Header.css';
 
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
@@ -38,9 +38,9 @@ const Header = () => {
                         </nav>
 
                         <div className="header__actions">
-                            <Button label={'Contact us'}/>
-                            <button type="button" className="menu__icon icon-menu" onClick={toggleMenu}><span></span>
-                            </button>
+                            <Button mode={'primary'} label={'Contact us'}/>
+                            {/*<Button mode={'secondary'} label={'Button'} />*/}
+                            <button type="button" className="menu__icon icon-menu" onClick={toggleMenu}><span></span></button>
                         </div>
                     </div>
                 </div>
