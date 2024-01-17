@@ -1,0 +1,219 @@
+.header {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+    transition: transform 0.4s, background 0.4s;
+}
+
+.header__menu {
+    position: relative;
+}
+.header__logo {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.header__logo span {
+    color: #00A97F;
+}
+
+.header__logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.header__social {
+    font-size: 24px;
+    display: flex;
+    column-gap: 10px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.menu__body {
+    display: flex;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 3px;
+    padding: 5px 0;
+    position: relative;
+    color: #fff;
+}
+
+.menu__item:hover {
+    color: #00A97F;
+}
+
+.menu__link {
+    font-weight: 500;
+    transition: color 0.3s ease 0s;
+}
+
+
+.icon-menu {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .menu {
+        height: 50px;
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .menu__body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        left: -100%;
+        top: 0;
+        /*background-color: #242424;*/
+        transition: left 0.3s ease 0s;
+        padding: 70px 15px 30px 15px;
+        z-index: 9;
+
+        /* From https://css.glass */
+        /*background: rgba(255, 255, 255, 0.15);*/
+        /*border-radius: 16px;*/
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        /*border: 1px solid rgba(255, 255, 255, 0.2);*/
+    }
+
+    .menu__body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        top: 0;
+        left: -100%;
+        background-color: #1a1a1a;
+        transition: left 0.3s ease 0s;
+        z-index: 9;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .menu-open .menu__body {
+        left: 0;
+    }
+
+    .menu-open .menu__body::before {
+        left: 0;
+    }
+
+    .icon-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        z-index: 10;
+    }
+
+    .icon-menu span, .icon-menu::before, .icon-menu::after {
+        content: "";
+        transition: all 0.3s ease 0s;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .icon-menu::before {
+        top: 0;
+    }
+
+    .icon-menu::after {
+        bottom: 0;
+    }
+
+    .icon-menu span {
+        top: calc(50% - 1px);
+    }
+
+    .menu-open .icon-menu span {
+        width: 0;
+    }
+
+    .menu-open .icon-menu::before {
+        top: calc(50% - 1px);
+        transform: rotate(-45deg);
+    }
+
+    .menu-open .icon-menu::after {
+        bottom: calc(50% - 1px);
+        transform: rotate(45deg);
+    }
+
+    .menu__item {
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .menu__item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu__link {
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 767.98px) and (any-hover: none) {
+    .icon-menu {
+        cursor: default;
+    }
+}
+
+.header.menu-open {
+    height: 100%;
+}
+
+.header.scrolling {
+    transform: translateY(-100%);
+}
+
+.header.scrolling.reveal-header {
+    transform: translateY(0%);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
