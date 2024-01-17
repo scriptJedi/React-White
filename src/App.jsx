@@ -1,32 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
+import * as PropTypes from "prop-types";
 
 // import icons
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {faCoffee, faCheckSquare, faTimes} from '@fortawesome/free-solid-svg-icons';
+// import {library} from '@fortawesome/fontawesome-svg-core';
+// import {faCoffee, faCheckSquare, faTimes} from '@fortawesome/free-solid-svg-icons';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-library.add(faCoffee, faCheckSquare, faTimes);
+// <FontAwesomeIcon icon="fa-solid fa-star" />
+// library.add(faCoffee, faCheckSquare, faTimes);
 
 // import components
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+// import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 
 // import blocks
-import Hero from "./blocks/Hero.jsx";
+import Hero from "./blocks/Hero";
+import Testimonials from "./blocks/Testimonials";
 
 // import styles
 import './assets/App.css'
 
-function App() {
+
+const App = () => {
+
     return (
-        <>
-            <div className="wrapper">
-                <Header/>
-                <main className="page">
-                    <Hero/>
-                </main>
-                <Footer/>
-            </div>
-        </>
+        <div className="wrapper">
+            <Header/>
+            <main className="page">
+                <Hero/>
+                <Testimonials/>
+            </main>
+            <Footer/>
+        </div>
     )
 }
 

@@ -19,7 +19,7 @@ const Hero = () => {
                     <p>Streamline administrative tasks and simplify daily operations.</p>
                 </div>
             <div className="scrollDownBtn">
-                <ScrollDown label="Scroll Down" fontSize="20px" width="30px" height="30px" fontWeight="bold" color="#fff" />
+                <ScrollDown label="Scroll Down" fontSize="20px" width="30px" height="30px" fontWeight="100" color="#fff" />
             </div>
         </section>
     );

@@ -1,0 +1,20 @@
+[
+  {
+    "stars": 5,
+    "content": "Working with this company was a game-changer for my business finances. Her personalized advice and deep expertise made complex financial decisions feel effortless. I now feel more confident and empowered in managing my business's finances.",
+    "user": {
+      "name": "Jenny Wilson",
+      "position": "Founder, SME Corp.",
+      "image": "src/assets/img/user1.png"
+    }
+  },
+  {
+    "stars": 4,
+    "content": "Collaborating with this company as my financial consultant was exceptional. His strategic insights and tailored solutions significantly improved my business's financial structure. This company simplifies complex concepts, making the process smooth and effective. Highly recommend!",
+    "user": {
+      "name": "Josen Mark",
+      "position": "Founder, SME Corp.",
+      "image": "src/assets/img/user2.png"
+    }
+  }
+]

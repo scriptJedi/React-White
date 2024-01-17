@@ -1,5 +1,6 @@
 // src/components/Footer.js
 import React from 'react';
+
 import '../assets/Footer.css';
 
 const Footer = () => {
@@ -7,10 +8,8 @@ const Footer = () => {
         <footer>
             <div className="footer__container">
                 <div className="footer__wrapper">
-                    <span className="footer__copy">
-                        2024 CompanyName
-                    </span>
-                    <a href="" className="footer__link">
+                    <span className="footer__copy">2024 CompanyName</span>
+                    <a>
                         Privacy Policy
                     </a>
                 </div>

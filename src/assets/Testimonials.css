@@ -1,0 +1,147 @@
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: none !important;
+}
+
+.testimonials {
+    position: relative;
+}
+
+.item-testimonials {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-testimonials__stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.item-testimonials__content {
+    max-width: 800px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #171f36;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.item-testimonials__user {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-testimonials__user img {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.item-testimonials__user h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: #171f36;
+}
+
+.item-testimonials__user span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #393e46;
+    opacity: 0.51;
+}
+
+.swiper-pagination {
+    margin-top: 100px;
+}
+
+.testimonials {
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.testimonials .swiper-button-next,
+.testimonials .swiper-button-prev {
+    display: none;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 500px;
+    transition: 0.4s;
+    z-index: 1;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials .swiper-button-next svg,
+.testimonials .swiper-button-prev svg {
+    color: #1a1a1a;
+    height: 30px;
+}
+
+.testimonials .swiper-button-next:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.testimonials .swiper-button-prev:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.testimonials .swiper-pagination-bullet {
+    background: #1a1a1a;
+    transition: all 0.3s;
+    width: 40px;
+    height: 7px;
+    border-radius: 1000px;
+}
+
+.testimonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .testimonials {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .testimonials .swiper-button-next,
+    .testimonials .swiper-button-prev {
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonials {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonials {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .item-testimonials__user h4 {
+        font-size: 22px;
+    }
+}
