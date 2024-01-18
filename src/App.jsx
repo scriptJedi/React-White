@@ -16,6 +16,7 @@ import Footer from "./components/Footer.jsx";
 // import blocks
 import Hero from "./blocks/Hero";
 import Testimonials from "./blocks/Testimonials";
+import About from './blocks/About';
 
 // import styles
 import './assets/App.css'
@@ -29,6 +30,7 @@ const App = () => {
             <main className="page">
                 <Hero/>
                 <Testimonials/>
+                <About/>
             </main>
             <Footer/>
         </div>
