@@ -18,6 +18,11 @@ import Hero from "./blocks/Hero";
 import Testimonials from "./blocks/Testimonials";
 import About from "./blocks/About";
 import Block1 from "./blocks/Block1.jsx";
+import Block2 from "./blocks/Block2.jsx";
+import Block3 from "./blocks/Block3.jsx";
+import Block4 from "./blocks/Block4.jsx";
+import Block5 from "./blocks/Block5.jsx";
+import Form from "./blocks/Form.jsx";
 
 // import styles
 import "./assets/App.css";
@@ -31,6 +36,11 @@ const App = () => {
         <Testimonials />
         <About />
         <Block1 />
+        <Block2 />
+        <Block3 />
+        <Block4 />
+        <Block5 />
+        <Form />
       </main>
       <Footer />
     </div>

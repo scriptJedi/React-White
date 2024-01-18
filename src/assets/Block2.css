@@ -1,0 +1,92 @@
+.core {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+.core-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.core-title {
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999999;
+}
+.core-subtitle {
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.core-devider {
+  width: 120px;
+  background-color: #1e7df4;
+  margin-bottom: 20px;
+  height: 2px;
+}
+.core-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 50px;
+  justify-content: center;
+}
+.core-item {
+  max-width: 500px;
+  display: flex;
+  gap: 20px;
+}
+.core-item:hover {
+  .core-icon {
+    background-color: #1e7df4;
+  }
+  .core-icon > svg {
+    fill: #fff;
+    color: #fff;
+  }
+  .stoke-mod {
+    fill: #1e7df4;
+  }
+  .stoke-mod > path {
+    stroke: #fff;
+    fill: #1e7df4;
+  }
+}
+.core-icon {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: #1e7df4 2px solid;
+  border-radius: 3px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.core-icon > svg {
+  width: 30px;
+  height: 30px;
+  fill: #1e7df4;
+  color: #1e7df4;
+  transition: all 0.3s;
+}
+.stoke-mod {
+  fill: #fff !important;
+  transition: all 0.3s;
+}
+.stoke-mod > path {
+  stroke: #1e7df4;
+  transition: all 0.3s;
+}
+.core-descr {
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #666666;
+}
