@@ -9,9 +9,8 @@ import * as PropTypes from "prop-types";
 // library.add(faCoffee, faCheckSquare, faTimes);
 
 // import components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Cookie from "./components/Cookie";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 // import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 
 // import blocks
@@ -33,11 +32,12 @@ const App = () => {
                 <Testimonials/>
                 <About/>
             </main>
-            <Cookie/>
             <Footer/>
         </div>
     )
 }
+
+console.log('gamno');
 
 export default App
 
