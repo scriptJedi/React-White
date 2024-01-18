@@ -11,12 +11,14 @@ import * as PropTypes from "prop-types";
 // import components
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import Cookie from "./components/Cookie.jsx";
 // import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 
 // import blocks
 import Hero from "./blocks/Hero";
 import Testimonials from "./blocks/Testimonials";
 import About from './blocks/About';
+import Block1 from './blocks/Block1.jsx';
 
 // import styles
 import './assets/App.css'
@@ -31,13 +33,13 @@ const App = () => {
                 <Hero/>
                 <Testimonials/>
                 <About/>
+                <Block1/>
             </main>
+            <Cookie/>
             <Footer/>
         </div>
     )
 }
-
-console.log('gamno');
 
 export default App
 
