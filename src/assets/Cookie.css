@@ -1,6 +1,9 @@
 #cookie-uk {
     display: none;
 }
+#cookie-uk.show {
+    display: block;
+}
 
 .cookie-card {
     position: fixed;
