@@ -37,6 +37,8 @@ const App = () => {
     )
 }
 
+console.log('gamno');
+
 export default App
 
 
