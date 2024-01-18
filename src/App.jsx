@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import * as PropTypes from "prop-types";
 
 // import icons
@@ -16,31 +16,30 @@ import Footer from "./components/Footer.jsx";
 // import blocks
 import Hero from "./blocks/Hero";
 import Testimonials from "./blocks/Testimonials";
-import About from './blocks/About';
+import About from "./blocks/About";
+import Block1 from "./blocks/Block1.jsx";
 
 // import styles
-import './assets/App.css'
-
+import "./assets/App.css";
 
 const App = () => {
+  return (
+    <div className="wrapper">
+      <Header />
+      <main className="page">
+        <Hero />
+        <Testimonials />
+        <About />
+        <Block1 />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-    return (
-        <div className="wrapper">
-            <Header/>
-            <main className="page">
-                <Hero/>
-                <Testimonials/>
-                <About/>
-            </main>
-            <Footer/>
-        </div>
-    )
-}
+console.log("gamno");
 
-console.log('gamno');
-
-export default App
-
+export default App;
 
 // // App.js
 // import React, { useState, useEffect } from 'react';
