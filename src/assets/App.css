@@ -179,7 +179,7 @@ svg {
 }
 
 .wrapper {
-    /*background: #12121e;*/
+    background: #fff;
     position: relative;
     min-height: 100%;
     display: flex;

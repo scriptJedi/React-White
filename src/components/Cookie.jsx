@@ -34,12 +34,11 @@ const Cookie = () => {
 
     return (
         <div className="cookie-card" id="cookie-uk">
-            <span className="cookie-title">🍪 Cookie Notice</span>
+            <span className="cookie-title"><span style={{marginRight:'10px'}}>🍪</span>Cookie Notice</span>
             <p className="cookie-description">
                 We use cookies to ensure that we give you the best experience on our website. <a href="#">Read cookies policies</a>.
             </p>
             <div className="cookie-actions">
-                <button className="cookie-pref">Manage your preferences</button>
                 <button className="cookie-accept" data-cookie-accept="true">
                     Accept
                 </button>

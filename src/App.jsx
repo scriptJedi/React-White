@@ -12,7 +12,7 @@ import * as PropTypes from "prop-types";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Cookie from "./components/Cookie.jsx";
-// import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
+import RegistrationForm from "./components/RegistrationForm.jsx";
 
 // import blocks
 import Hero from "./blocks/Hero";
@@ -27,6 +27,7 @@ import Form from "./blocks/Form.jsx";
 
 // import styles
 import "./assets/App.css";
+
 
 const App = () => {
   return (
@@ -49,7 +50,6 @@ const App = () => {
   );
 };
 
-export default App;
 
 // // App.js
 // import React, { useState, useEffect } from 'react';
