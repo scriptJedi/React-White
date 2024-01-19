@@ -180,6 +180,7 @@ svg {
 
 .wrapper {
     /*background: #12121e;*/
+    position: relative;
     min-height: 100%;
     display: flex;
     flex-direction: column;

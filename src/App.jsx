@@ -11,6 +11,7 @@ import * as PropTypes from "prop-types";
 // import components
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import Cookie from "./components/Cookie.jsx";
 // import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 
 // import blocks
@@ -42,12 +43,11 @@ const App = () => {
         <Block5 />
         <Form />
       </main>
+      <Cookie />
       <Footer />
     </div>
   );
 };
-
-console.log("gamno");
 
 export default App;
 
