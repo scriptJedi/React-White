@@ -59,6 +59,7 @@
     z-index: 2;
 }
 
+
 @media(max-width: 767.98px) {
     .hero__label {
         top: 50%;
