@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import * as PropTypes from "prop-types";
 
 // import icons
@@ -17,33 +17,38 @@ import RegistrationForm from "./components/RegistrationForm.jsx";
 // import blocks
 import Hero from "./blocks/Hero";
 import Testimonials from "./blocks/Testimonials";
-import About from './blocks/About';
-import Block1 from './blocks/Block1.jsx';
+import About from "./blocks/About";
+import Block1 from "./blocks/Block1.jsx";
+import Block2 from "./blocks/Block2.jsx";
+import Block3 from "./blocks/Block3.jsx";
+import Block4 from "./blocks/Block4.jsx";
+import Block5 from "./blocks/Block5.jsx";
+import Form from "./blocks/Form.jsx";
 
 // import styles
-import './assets/App.css'
-
+import "./assets/App.css";
 
 
 const App = () => {
-
-    return (
-        <div className="wrapper">
-            <Header/>
-            <main className="page">
-                <Hero/>
-                <Testimonials/>
-                <About/>
-                <Block1/>
-                <RegistrationForm/>
-            </main>
-            <Cookie/>
-            <Footer/>
-        </div>
-    )
-}
-
-export default App
+  return (
+    <div className="wrapper">
+      <Header />
+      <main className="page">
+        <Hero />
+        <Testimonials />
+        <About />
+        <Block1 />
+        <Block2 />
+        <Block3 />
+        <Block4 />
+        <Block5 />
+        <Form />
+      </main>
+      <Cookie />
+      <Footer />
+    </div>
+  );
+};
 
 
 // // App.js
