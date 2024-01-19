@@ -12,7 +12,7 @@ import * as PropTypes from "prop-types";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Cookie from "./components/Cookie.jsx";
-// import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
+import RegistrationForm from "./components/RegistrationForm.jsx";
 
 // import blocks
 import Hero from "./blocks/Hero";
@@ -22,6 +22,7 @@ import Block1 from './blocks/Block1.jsx';
 
 // import styles
 import './assets/App.css'
+
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
                 <Testimonials/>
                 <About/>
                 <Block1/>
+                <RegistrationForm/>
             </main>
             <Cookie/>
             <Footer/>
