@@ -115,21 +115,26 @@
     height: 10px;
 }
 
-@media (min-width: 768px) {
-    .testimonials {
-        padding-top: 80px;
-        padding-bottom: 50px;
-    }
-    .testimonials .swiper-button-next,
-    .testimonials .swiper-button-prev {
-        display: flex;
-    }
-}
-
 @media (min-width: 992px) {
     .testimonials {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .testimonials {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .testimonials .swiper-button-next,
+    .testimonials .swiper-button-prev {
+        display: flex;
+    }
+
+    .item-testimonials__user h4 {
+        font-size: 22px;
     }
 }
 
@@ -140,8 +145,3 @@
     }
 }
 
-@media (min-width: 767.98px) {
-    .item-testimonials__user h4 {
-        font-size: 22px;
-    }
-}

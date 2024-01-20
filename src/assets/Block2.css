@@ -26,7 +26,7 @@
 }
 .core-devider {
   width: 120px;
-  background-color: #1e7df4;
+  background-color: #00A97F;
   margin-bottom: 20px;
   height: 2px;
 }
@@ -43,25 +43,25 @@
 }
 .core-item:hover {
   .core-icon {
-    background-color: #1e7df4;
+    background-color: #00A97F;
   }
   .core-icon > svg {
     fill: #fff;
     color: #fff;
   }
   .stoke-mod {
-    fill: #1e7df4;
+    fill: #00A97F;
   }
   .stoke-mod > path {
     stroke: #fff;
-    fill: #1e7df4;
+    fill: #00A97F;
   }
 }
 .core-icon {
   width: 50px;
   height: 50px;
   padding: 10px;
-  border: #1e7df4 2px solid;
+  border: #00A97F 2px solid;
   border-radius: 3px;
   transition: all 0.3s;
   display: flex;
@@ -72,8 +72,8 @@
 .core-icon > svg {
   width: 30px;
   height: 30px;
-  fill: #1e7df4;
-  color: #1e7df4;
+  fill: #00A97F;
+  color: #00A97F;
   transition: all 0.3s;
 }
 .stoke-mod {
@@ -81,7 +81,7 @@
   transition: all 0.3s;
 }
 .stoke-mod > path {
-  stroke: #1e7df4;
+  stroke: #00A97F;
   transition: all 0.3s;
 }
 .core-descr {

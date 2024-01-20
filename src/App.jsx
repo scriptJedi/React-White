@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import * as PropTypes from "prop-types";
 
 // import icons
@@ -30,25 +30,27 @@ import "./assets/App.css";
 
 
 const App = () => {
-  return (
-    <div className="wrapper">
-      <Header />
-      <main className="page">
-        <Hero />
-        <Testimonials />
-        <About />
-        <Block1 />
-        <Block2 />
-        <Block3 />
-        <Block4 />
-        <Block5 />
-        <Form />
-      </main>
-      <Cookie />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="wrapper">
+            <Header/>
+            <main className="page">
+                <Hero/>
+                <Testimonials/>
+                <About/>
+                <Block1/>
+                <Block2/>
+                <Block3/>
+                <Block4/>
+                <Block5/>
+                <RegistrationForm/>
+            </main>
+            <Cookie/>
+            <Footer/>
+        </div>
+    );
 };
+
+export default App
 
 
 // // App.js

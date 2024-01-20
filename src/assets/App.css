@@ -148,35 +148,7 @@ svg {
     margin-left: auto;
 }
 
-@media (min-width: 576px) {
-    [class*="__container"] {
-        max-width: 540px;
-    }
-}
 
-@media (min-width: 768px) {
-    [class*="__container"] {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    [class*="__container"] {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    [class*="__container"] {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1400px) {
-    [class*="__container"] {
-        max-width: 1320px;
-    }
-}
 
 .wrapper {
     background: #fff;
@@ -218,5 +190,47 @@ svg {
 @media (min-width: 1200px) {
     .title {
         font-size: 54px;
+    }
+}
+
+@media (min-width: 576px) {
+    [class*="__container"] {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    [class*="__container"] {
+        max-width: 720px;
+    }
+    section:not(.hero) {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    [class*="__container"] {
+        max-width: 960px;
+    }
+    section:not(.hero) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    [class*="__container"] {
+        max-width: 1140px;
+    }
+    section:not(.hero) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+@media (min-width: 1400px) {
+    [class*="__container"] {
+        max-width: 1320px;
     }
 }

@@ -127,6 +127,7 @@
     }
 }
 
+
 @media (min-width: 1200px) {
     .about {
         padding-top: 120px;
@@ -153,6 +154,8 @@
     }
 }
 
+
+
 @media (max-width: 1200px) {
     .about__wrapper {
         flex-direction: column;
@@ -162,6 +165,7 @@
         margin-bottom: 30px;
     }
 }
+
 
 @media (max-width: 430px) {
     .content-about__item {
@@ -173,3 +177,4 @@
         margin: 0 auto 15px auto;
     }
 }
+
