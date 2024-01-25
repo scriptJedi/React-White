@@ -1,17 +1,14 @@
-// Block1.js
-import React from 'react';
-import ScrollDown from "../components/ScrollDown";
+import RandomVideo from "../components/RandomVideo.jsx";
+import ScrollDown from "../components/ScrollDown.jsx";
+
 import '../assets/Hero.css';
-// import heroImage from '../assets/img/hero.webp';
-import hero_vid from '../assets/video/hero_1.mp4'
 
 const Hero = () => {
     return (
         <section className="hero">
             <div className="hero__bg">
                 <div className="hero__overlay"></div>
-                <video muted autoPlay loop src={hero_vid}></video>
-                {/*<img src={heroImage} alt="Hero Image"/>*/}
+                <RandomVideo/>
             </div>
                 <div className="hero__label">
                     <h2>Finance Courses</h2>

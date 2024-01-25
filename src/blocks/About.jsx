@@ -1,14 +1,9 @@
 import '../assets/About.css';
+import CircleIcon from "../components/CircleIcon.jsx";
 
 import aboutLarge from '../assets/img/about_large.png';
 import about01 from '../assets/img/about_1.png';
 import about02 from '../assets/img/about_2.png';
-
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {faBullseye, faRocket} from '@fortawesome/free-solid-svg-icons';
-
-library.add(faBullseye, faRocket);
 
 const About = () => {
     return (
@@ -16,13 +11,31 @@ const About = () => {
             <div className="about__container">
                 <div className="about__wrapper">
                     <div className="about__imgs">
-                        <div style={{flex: '0 0 auto', width: '100%', maxWidth: '100%',marginTop:'24px',padding:'0 12px'}}>
+                        <div style={{
+                            flex: '0 0 auto',
+                            width: '100%',
+                            maxWidth: '100%',
+                            marginTop: '24px',
+                            padding: '0 12px'
+                        }}>
                             <img src={aboutLarge} alt=""/>
                         </div>
-                        <div style={{flex: '0 0 auto', width: '50%', paddingRight: '12px',marginTop:'24px',padding:'0 12px'}}>
+                        <div style={{
+                            flex: '0 0 auto',
+                            width: '50%',
+                            paddingRight: '12px',
+                            marginTop: '24px',
+                            padding: '0 12px'
+                        }}>
                             <img src={about01} alt=""/>
                         </div>
-                        <div style={{flex: '0 0 auto', width: '50%', paddingLeft: '12px',marginTop:'24px',padding:'0 12px'}}>
+                        <div style={{
+                            flex: '0 0 auto',
+                            width: '50%',
+                            paddingLeft: '12px',
+                            marginTop: '24px',
+                            padding: '0 12px'
+                        }}>
                             <img src={about02} alt=""/>
                         </div>
                     </div>
@@ -34,9 +47,7 @@ const About = () => {
                         </div>
                         <div className="content-about__items">
                             <div className="content-about__item">
-                                <div className="content-about__icon">
-                                    <FontAwesomeIcon icon="fa-solid fa-rocket"/>
-                                </div>
+                                <CircleIcon iconName="rocket"/>
                                 <div className="content-about__text">
                                     <h4>
                                         Our mission
@@ -49,9 +60,8 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="content-about__item">
-                                <div className="content-about__icon">
-                                    <FontAwesomeIcon icon="fa-solid fa-bullseye"/>
-                                </div>
+                                <CircleIcon iconName="bullseye"/>
+
                                 <div className="content-about__text">
                                     <h4>
                                         Our vision

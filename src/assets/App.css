@@ -138,6 +138,18 @@ svg {
 /*    }*/
 /*}*/
 
+[class*="-ibg"] {
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
 [class*="__container"] {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -190,6 +202,32 @@ svg {
 @media (min-width: 1200px) {
     .title {
         font-size: 54px;
+    }
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555c71;
+    font-weight: 700;
+    line-height: 1.2037037037;
+}
+
+@media (min-width: 480px) {
+    .subtitle {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .subtitle {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .subtitle {
+        font-size: 30px;
     }
 }
 

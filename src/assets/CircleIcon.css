@@ -1,0 +1,38 @@
+.CircleIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    border-radius: 500px;
+    background: #ffffff;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.09);
+}
+
+.CircleIcon svg {
+    font-size: 30px;
+    color: #00A97F;
+}
+
+.CircleIcon--big {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+.CircleIcon--big svg {
+    font-size: 50px;
+}
+
+.CircleIcon--small {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.CircleIcon--small svg {
+    font-size: 20px;
+}

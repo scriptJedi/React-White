@@ -24,6 +24,7 @@ import Block3 from "./blocks/Block3.jsx";
 import Block4 from "./blocks/Block4.jsx";
 import Block5 from "./blocks/Block5.jsx";
 import Form from "./blocks/Form.jsx";
+import Cta from "./blocks/Cta.jsx";
 
 // import styles
 import "./assets/App.css";
@@ -42,6 +43,7 @@ const App = () => {
                 <Block3/>
                 <Block4/>
                 <Block5/>
+                <Cta/>
                 <RegistrationForm/>
             </main>
             <Cookie/>
