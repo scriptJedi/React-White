@@ -18,7 +18,7 @@ const Cta = () => {
                         So, It is high time to introduce your agency digitaly.
                     </p>
                     <div style={{display: 'flex', justifyContent: 'center'}}>
-                        <Button label={'Contact us'} isLink={true}/>
+                        <Button mode={'secondary'} label={'Contact us'} isLink={true}/>
                     </div>
                 </div>
             </div>

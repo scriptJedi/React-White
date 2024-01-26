@@ -70,10 +70,10 @@ const Header = () => {
 
                     <nav className="menu__body">
                         <ul className="menu__list">
-                            <li className="menu__item"><a href="" className="menu__link">Services</a></li>
-                            <li className="menu__item"><a href="" className="menu__link">Portfolio</a></li>
-                            <li className="menu__item"><a href="" className="menu__link">About us</a></li>
-                            <li className="menu__item"><a href="" className="menu__link">Contacts</a></li>
+                            <li className="menu__item link-hover"><a href="" className="menu__link">Services</a></li>
+                            <li className="menu__item link-hover"><a href="" className="menu__link">Portfolio</a></li>
+                            <li className="menu__item link-hover"><a href="" className="menu__link">About us</a></li>
+                            <li className="menu__item link-hover"><a href="" className="menu__link">Contacts</a></li>
                         </ul>
                     </nav>
 

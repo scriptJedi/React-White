@@ -28,7 +28,7 @@ const Block3 = () => {
                                 of the uncompromising quality of services our company provides.
                             </p>
                             <div style={{display:'flex'}}>
-                                <Button isLink={true} mode={'primary'} label={'Read more'}/>
+                                <Button isLink={true} label={'Read more'}/>
                             </div>
                         </div>
                     </div>

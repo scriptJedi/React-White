@@ -14,7 +14,10 @@ import {
     faLightbulb,
     faGear,
     faSliders,
-    faChartPie, faCloud, faThumbsUp, faMugHot
+    faChartPie,
+    faCloud,
+    faThumbsUp,
+    faMugHot
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faBullseye, faRocket, faLaptop, faQuestion, faBriefcase, faGlobe, faMobileScreen, faLightbulb, faGear, faSliders, faChartPie, faCloud, faThumbsUp, faMugHot);
