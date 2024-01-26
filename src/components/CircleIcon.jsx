@@ -1,6 +1,6 @@
 // CircleIcon.js
 import React from 'react';
-import '../assets/Styles/CircleIcon.css';
+import '../assets/styles/CircleIcon.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {

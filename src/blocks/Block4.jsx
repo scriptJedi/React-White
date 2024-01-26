@@ -1,4 +1,4 @@
-import "../assets/Styles/Block4.css";
+import "../assets/styles/Block4.css";
 
 const Block4 = () => {
   return (

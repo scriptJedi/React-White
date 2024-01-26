@@ -2,7 +2,7 @@
 import React from 'react';
 import {Button} from "./Button.jsx";
 
-import '../assets/Styles/RegistrationForm.css'
+import '../assets/styles/RegistrationForm.css'
 
 const RegistrationForm = () => {
     return (

@@ -1,4 +1,4 @@
-import "../assets/Styles/About1.css";
+import "../assets/styles/About1.css";
 import {Button} from "../components/Button.jsx";
 import CircleIcon from "../components/CircleIcon.jsx";
 

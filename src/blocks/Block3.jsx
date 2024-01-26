@@ -1,4 +1,4 @@
-import "../assets/Styles/Block3.css";
+import "../assets/styles/Block3.css";
 import img_src from "../assets/img/about/about-2-570x280.jpg";
 import {Button} from "../components/Button.jsx";
 import React from "react";

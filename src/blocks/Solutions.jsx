@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import "../assets/Styles/Solutions.css";
+import "../assets/styles/Solutions.css";
 import {Button} from "../components/Button.jsx";
 import CircleIcon from "../components/CircleIcon.jsx";
 

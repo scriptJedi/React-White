@@ -1,4 +1,4 @@
-import "../assets/Styles/Block2.css";
+import "../assets/styles/Block2.css";
 import CircleIcon from "../components/CircleIcon.jsx";
 
 const Block2 = () => {

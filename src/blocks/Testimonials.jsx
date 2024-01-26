@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import "../assets/Styles/Testimonials.css"
+import "../assets/styles/Testimonials.css"
 
 import 'swiper/css';
 import 'swiper/css/navigation';

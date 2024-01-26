@@ -1,4 +1,4 @@
-import "../assets/Styles/Form.css";
+import "../assets/styles/Form.css";
 // import thanks from "../assets/php/thanks.php";
 
 const Form = () => {

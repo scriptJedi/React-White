@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "../assets/Styles/ScrollDown.css";
+import "../assets/styles/ScrollDown.css";
 
 const ScrollDown = ({label, fontSize, height, width, fontWeight, color}) => {
     const svgStyles = {

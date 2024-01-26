@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Button} from './Button';
-import '../assets/Styles/App.css';
-import '../assets/Styles/Header.css';
+import '../assets/styles/App.css';
+import '../assets/styles/Header.css';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
 

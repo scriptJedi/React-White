@@ -1,4 +1,4 @@
-import '../assets/Styles/About.css';
+import '../assets/styles/About.css';
 import CircleIcon from "../components/CircleIcon.jsx";
 
 import aboutLarge from '../assets/img/about_large.png';

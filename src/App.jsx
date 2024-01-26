@@ -29,7 +29,7 @@ import Cta from "./blocks/Cta.jsx";
 import About1 from "./blocks/About1.jsx";
 
 // import styles
-import "./assets/Styles/App.css";
+import "./assets/styles/App.css";
 
 
 const App = () => {

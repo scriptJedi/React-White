@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../assets/Styles/Button.css';
+import '../assets/styles/Button.css';
 import { useMediaQuery } from '@react-hook/media-query';
 
 /**
