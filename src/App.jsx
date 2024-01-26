@@ -24,7 +24,7 @@ import Block2 from "./blocks/Block2.jsx";
 import Block3 from "./blocks/Block3.jsx";
 import Block4 from "./blocks/Block4.jsx";
 import Block5 from "./blocks/Block5.jsx";
-import Form from "./blocks/Form.jsx";
+// import Form from "./blocks/Form.jsx";
 import Cta from "./blocks/Cta.jsx";
 import About1 from "./blocks/About1.jsx";
 
@@ -38,17 +38,17 @@ const App = () => {
             <Header/>
             <main className="page">
                 <Hero/>
-                <Testimonials/>
+                <About1/>
+                <Solutions/>
+                <Cta/>
                 <About/>
+                <Testimonials/>
+                <RegistrationForm/>
                 <Block1/>
                 <Block2/>
                 <Block3/>
                 <Block4/>
                 <Block5/>
-                <Cta/>
-                <About1/>
-                <Solutions/>
-                <RegistrationForm/>
             </main>
             <Cookie/>
             <Footer/>
