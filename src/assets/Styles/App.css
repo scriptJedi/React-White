@@ -138,28 +138,27 @@ svg {
 /*    }*/
 /*}*/
 
-[class*="-ibg"] {
-    position: relative;
-    img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-    }
+
+[class*="-ibg"] img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
-[class*="__container"] {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+.container {
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-right: auto;
     margin-left: auto;
+    padding: 0 10px;
 }
 
+section:not(.hero) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
 
 .wrapper {
@@ -232,15 +231,16 @@ svg {
 }
 
 @media (min-width: 576px) {
-    [class*="__container"] {
+    .container {
         max-width: 540px;
     }
 }
 
 @media (min-width: 768px) {
-    [class*="__container"] {
+    .container {
         max-width: 720px;
     }
+
     section:not(.hero) {
         padding-top: 80px;
         padding-bottom: 50px;
@@ -248,9 +248,10 @@ svg {
 }
 
 @media (min-width: 992px) {
-    [class*="__container"] {
+    .container {
         max-width: 960px;
     }
+
     section:not(.hero) {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -258,9 +259,10 @@ svg {
 }
 
 @media (min-width: 1200px) {
-    [class*="__container"] {
+    .container {
         max-width: 1140px;
     }
+
     section:not(.hero) {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -268,7 +270,8 @@ svg {
 }
 
 @media (min-width: 1400px) {
-    [class*="__container"] {
+    .container {
         max-width: 1320px;
+        padding: 0 20px;
     }
 }

@@ -5,8 +5,8 @@
     --bs-gutter-x: 32px;
     --bs-gutter-y: 20px;
     padding: 30px 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .body-form__upper {
@@ -37,10 +37,7 @@
     color: rgba(26, 36, 63, 0.5);
     background: transparent;
     height: 35px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 5px 0 10px;
     border: 0;
     border-radius: 0;
     border-bottom: 1px solid rgba(26, 36, 63, 0.2);
@@ -52,10 +49,7 @@
     font-weight: 400;
     color: rgba(26, 36, 63, 0.5);
     background: transparent;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 5px 0 10px;
     border: 0;
     border-radius: 0;
     border-bottom: 1px solid rgba(26, 36, 63, 0.2);
@@ -63,53 +57,6 @@
     min-height: auto;
     resize: vertical;
     width: 100%;
-}
-
-@media (min-width: 400px) {
-    .body-form {
-        padding: 30px;
-    }
-}
-
-@media (min-width: 575px) {
-    .body-form {
-        margin-left: 55px;
-        margin-right: 55px;
-    }
-}
-
-@media (min-width: 992px) {
-    .body-form {
-        padding: 36px 46px 54px;
-    }
-
-}
-
-@media (min-width: 1400px) {
-    .body-form {
-        padding: 56px 48px;
-    }
-}
-
-@media (min-width: 768px) {
-    .main-form {
-        padding-top: 80px;
-        padding-bottom: 50px;
-    }
-}
-
-@media (min-width: 992px) {
-    .main-form {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .main-form {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
 }
 
 @media(max-width: 767.98px) {

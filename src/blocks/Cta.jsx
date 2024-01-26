@@ -1,4 +1,4 @@
-import "../assets/Cta.css";
+import "../assets/Styles/Cta.css";
 import {Button} from "../components/Button.jsx";
 import React from "react";
 

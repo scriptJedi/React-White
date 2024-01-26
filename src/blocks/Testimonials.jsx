@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import "../assets/Testimonials.css"
+import "../assets/Styles/Testimonials.css"
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -67,7 +67,7 @@ const Testimonials = () => {
 
     return (
         <section className="testimonials">
-            <div className="testimonials__container">
+            <div className="container">
                 <div className="testimonials__slider">
                     <div className="swiper-wrapper">
                         {testimonials.map((testimonial, index) => (

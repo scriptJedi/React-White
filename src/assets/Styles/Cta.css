@@ -1,8 +1,5 @@
 .cta {
-    background: url('../assets/img/bg.png') 0 0 / cover no-repeat;
-}
-
-.container {
+    background: url('../img/bg.png') 0 0 / contain no-repeat;
 }
 
 .cta__wrapper {
@@ -11,11 +8,6 @@
     text-align: center;
 }
 
-.cta__wrapper h2 {
-}
-
-.cta__wrapper p {
-}
 .cta__wrapper .button {
     margin-top: 15px;
 }

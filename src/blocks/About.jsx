@@ -1,4 +1,4 @@
-import '../assets/About.css';
+import '../assets/Styles/About.css';
 import CircleIcon from "../components/CircleIcon.jsx";
 
 import aboutLarge from '../assets/img/about_large.png';
@@ -8,7 +8,7 @@ import about02 from '../assets/img/about_2.png';
 const About = () => {
     return (
         <section className="about">
-            <div className="about__container">
+            <div className="container">
                 <div className="about__wrapper">
                     <div className="about__imgs">
                         <div style={{

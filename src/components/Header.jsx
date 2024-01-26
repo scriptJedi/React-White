@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Button} from './Button';
-import '../assets/App.css';
-import '../assets/Header.css';
+import '../assets/Styles/App.css';
+import '../assets/Styles/Header.css';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
 
@@ -60,7 +60,7 @@ const Header = () => {
     return (
         <header className={`header ${isMenuOpen ? 'menu-open' : ''} ${isScrolling ? 'scrolling reveal-header' : ''}`}
                 id="sticky-header">
-            <div className="header__container">
+            <div className="container">
                 <div className="header__menu menu">
                     <div className="header__logo">
                         <a href="#">

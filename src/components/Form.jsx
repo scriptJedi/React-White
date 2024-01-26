@@ -4,7 +4,7 @@ import React from 'react';
 const RegistrationForm = () => {
     return (
         <section className="main-form">
-            <div className="main-form__container">
+            <div className="container">
                 <form action="" method="post" className="main-form__body body-form">
                     <div>
                         <div className="body-form__upper">

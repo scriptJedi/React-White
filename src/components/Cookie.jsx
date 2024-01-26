@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Cookies from 'js-cookie';
-import '../assets/Cookie.css';
+import '../assets/Styles/Cookie.css';
 
 const Cookie = () => {
     useEffect(() => {

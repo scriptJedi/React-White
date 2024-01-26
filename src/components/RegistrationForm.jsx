@@ -2,12 +2,12 @@
 import React from 'react';
 import {Button} from "./Button.jsx";
 
-import '../assets/RegistrationForm.css'
+import '../assets/Styles/RegistrationForm.css'
 
 const RegistrationForm = () => {
     return (
         <section className="main-form">
-            <div className="main-form__container">
+            <div className="container">
                 <form action="" method="post" className="main-form__body body-form">
                     <div>
                         <div className="body-form__upper">

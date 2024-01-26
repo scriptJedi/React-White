@@ -1,4 +1,4 @@
-import "../assets/Block1.css";
+import "../assets/Styles/Block1.css";
 import CircleIcon from "../components/CircleIcon.jsx";
 import {faGlobe} from "@fortawesome/free-solid-svg-icons";
 

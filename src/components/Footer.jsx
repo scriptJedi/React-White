@@ -1,12 +1,12 @@
 // src/components/Footer.js
 import React from 'react';
 
-import '../assets/Footer.css';
+import '../assets/Styles/Footer.css';
 
 const Footer = () => {
     return (
         <footer>
-            <div className="footer__container">
+            <div className="container">
                 <div className="footer__wrapper">
                     <span className="footer__copy">2024 CompanyName</span>
                     <a>

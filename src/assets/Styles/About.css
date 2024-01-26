@@ -2,9 +2,6 @@
     background: rgba(85, 92, 113, 0.05);
 }
 
-.about__container {
-}
-
 .about__wrapper {
     display: flex;
     align-items: center;

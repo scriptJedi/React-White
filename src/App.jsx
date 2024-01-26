@@ -13,6 +13,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Cookie from "./components/Cookie.jsx";
 import RegistrationForm from "./components/RegistrationForm.jsx";
+import Solutions from "./blocks/Solutions.jsx";
 
 // import blocks
 import Hero from "./blocks/Hero";
@@ -25,9 +26,10 @@ import Block4 from "./blocks/Block4.jsx";
 import Block5 from "./blocks/Block5.jsx";
 import Form from "./blocks/Form.jsx";
 import Cta from "./blocks/Cta.jsx";
+import About1 from "./blocks/About1.jsx";
 
 // import styles
-import "./assets/App.css";
+import "./assets/Styles/App.css";
 
 
 const App = () => {
@@ -44,6 +46,8 @@ const App = () => {
                 <Block4/>
                 <Block5/>
                 <Cta/>
+                <About1/>
+                <Solutions/>
                 <RegistrationForm/>
             </main>
             <Cookie/>

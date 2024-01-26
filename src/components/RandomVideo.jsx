@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../assets/Hero.css';
+import '../assets/Styles/Hero.css';
 
 import hero1 from '../assets/video/hero_1.mp4';
 import hero2 from '../assets/video/hero_2.mp4';

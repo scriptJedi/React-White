@@ -1,7 +1,7 @@
 import RandomVideo from "../components/RandomVideo.jsx";
 import ScrollDown from "../components/ScrollDown.jsx";
 
-import '../assets/Hero.css';
+import '../assets/Styles/Hero.css';
 
 const Hero = () => {
     return (

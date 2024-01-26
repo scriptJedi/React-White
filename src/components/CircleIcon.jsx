@@ -1,6 +1,6 @@
 // CircleIcon.js
 import React from 'react';
-import '../assets/CircleIcon.css';
+import '../assets/Styles/CircleIcon.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {
@@ -17,10 +17,11 @@ import {
     faChartPie,
     faCloud,
     faThumbsUp,
-    faMugHot
+    faMugHot,
+    faBook
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faBullseye, faRocket, faLaptop, faQuestion, faBriefcase, faGlobe, faMobileScreen, faLightbulb, faGear, faSliders, faChartPie, faCloud, faThumbsUp, faMugHot);
+library.add(faBullseye, faRocket, faLaptop, faQuestion, faBriefcase, faGlobe, faMobileScreen, faLightbulb, faGear, faSliders, faChartPie, faCloud, faThumbsUp, faMugHot, faBook);
 
 const CircleIcon = ({size = 'standard', iconName}) => {
     const getSizeClassName = () => {

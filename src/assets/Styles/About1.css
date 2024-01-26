@@ -1,0 +1,40 @@
+.about-we {
+}
+
+.container {
+}
+
+.about-we__label {
+    text-align: center;
+}
+
+.about-we__items {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-we__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item-about-we {
+}
+
+.item-about-we__title {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #171f36;
+    font-weight: 600;
+}
+.item-about-we__subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555c71;
+}
