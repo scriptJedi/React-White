@@ -1,4 +1,4 @@
-.coin {
+.dynamic-ya {
   width: 100%;
   padding: 80px 0;
   background: linear-gradient(
@@ -7,13 +7,13 @@
     rgb(222 222 222) 100%
   );
 }
-.coin-wrap {
+.dynamic-ya__wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.coin-title {
+.dynamic-ya__title {
   font-size: 42px;
   color: #343434;
   font-weight: 600;
@@ -21,27 +21,20 @@
   text-align: center;
   margin-bottom: 5px;
 }
-.coin-subtitle {
+.dynamic-ya__subtitle {
   font-weight: 600;
   color: #999;
   margin-bottom: 30px;
   font-size: 24px;
   text-align: center;
 }
-.coin-devider {
-  margin: 0 auto;
-  margin-bottom: 50px;
-  background-color: #00A97F;
-  width: 68px;
-  height: 3px;
-}
-.coin-block {
+.dynamic-ya-block {
   display: flex;
   gap: 60px 30px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.coin-item {
+.dynamic-ya-block__item {
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -50,18 +43,18 @@
   text-align: center;
   gap: 15px;
 }
-.coin-icon > svg {
+.dynamic-ya-block__icon > svg {
   width: 40px;
   height: 40px;
-  fill: #00A97F;
+  fill: #00a97f;
 }
-.coin-item-title {
+.dynamic-ya-block__title {
   color: #343434;
   display: block;
   font-size: 18px;
   font-weight: 500;
 }
-.coin-descr {
+.dynamic-ya-block__descr {
   color: #505050;
   font-size: 16px;
   line-height: 24px;
