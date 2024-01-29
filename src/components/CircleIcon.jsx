@@ -19,6 +19,11 @@ import {
   faThumbsUp,
   faMugHot,
   faBook,
+  faObjectUngroup,
+  faChartLine,
+  faChartSimple,
+  faServer,
+  faCameraRetro,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -36,7 +41,12 @@ library.add(
   faCloud,
   faThumbsUp,
   faMugHot,
-  faBook
+  faBook,
+  faObjectUngroup,
+  faChartLine,
+  faChartSimple,
+  faServer,
+  faCameraRetro
 );
 
 const CircleIcon = ({ size = "standard", iconName }) => {

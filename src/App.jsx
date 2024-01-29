@@ -23,10 +23,9 @@ import Info from "./blocks/Info.jsx";
 import Core from "./blocks/Core.jsx";
 import About2 from "./blocks/About2.jsx";
 import Dynamic from "./blocks/Dynamic.jsx";
-import Block5 from "./blocks/Block5.jsx";
 // import Form from "./blocks/Form.jsx";
-// import Cta from "./blocks/Cta.jsx";
-// import About1 from "./blocks/About1.jsx";
+import Cta from "./blocks/Cta.jsx";
+import About1 from "./blocks/About1.jsx";
 
 // import styles
 import "./assets/styles/App.css";
@@ -37,9 +36,9 @@ const App = () => {
       <Header />
       <main className="page">
         <Hero />
-        {/* <About1 /> */}
+        <About1 />
         <Solutions />
-        {/* <Cta /> */}
+        <Cta />
         <About />
         <Testimonials />
         <RegistrationForm />
