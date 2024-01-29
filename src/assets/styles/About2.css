@@ -3,49 +3,49 @@
   padding: 30px 0px;
   background-color: #ffffff;
 }
-.about-wrap {
+.about-je__wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-title {
+.about-je__title {
   font-weight: 900;
   line-height: 1.19565;
   font-size: 46px;
   color: #333;
   margin-bottom: 20px;
 }
-.about-devider {
+.about-je__devider {
   margin-bottom: 50px;
-  background-color: #00A97F;
+  background-color: #00a97f;
   width: 68px;
   height: 3px;
 }
-.about-block {
+.about-je-block {
   display: flex;
   gap: 80px;
   justify-content: center;
 }
-.about-img {
+.about-je-block__img {
   max-width: 570px;
   max-height: 280px;
   position: relative;
 }
-.about-img > img {
+.about-je-block__img > img {
   max-width: 570px;
   max-height: 280px;
 }
-.about-item {
+.about-je-block__item {
   max-width: 500px;
 }
-.about-item-title {
+.about-je-block__title {
   line-height: 1.18182;
   font-size: 22px;
   font-weight: 900;
   color: #333;
   margin-bottom: 20px;
 }
-.about-descr {
+.about-je-block__descr {
   -webkit-text-size-adjust: none;
   color: #666;
   background-color: #fff;
@@ -55,22 +55,7 @@
   -webkit-font-smoothing: subpixel-antialiased;
   margin-bottom: 30px;
 }
-.about-btn {
-  color: #24a3d8;
-  background-color: #fff;
-  border: 1px solid #24a3d8;
-  padding: 10px 27px;
-  font-size: 17px;
-  line-height: 26px;
-  border-radius: 4px;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-.about-btn:hover {
-  color: #fff;
-  background-color: #24a3d8;
-}
-.about-promo {
+.about-je-block__promo {
   display: block;
   position: absolute;
   top: 50%;
@@ -83,7 +68,7 @@
   transition: 0.3s all;
   opacity: 0.6;
 }
-.about-promo:before {
+.about-je-block__promo:before {
   content: "";
   position: relative;
   display: block;
@@ -96,27 +81,27 @@
   top: 50%;
   transform: translate(calc(-50% + 4px), -50%);
 }
-.about-promo:hover {
+.about-je-block__promo:hover {
   opacity: 1;
 }
 @media (max-width: 970px) {
-  .about-block {
+  .about-je-block {
     flex-wrap: wrap;
     gap: 30px;
   }
-  .about-img {
+  .about-je-block___img {
     max-width: 720px;
     max-height: 350px;
   }
-  .about-img > img {
+  .about-je-block___img > img {
     max-width: none;
     max-height: none;
     width: 100%;
   }
-  .about-item {
+  .about-je-block___item {
     max-width: 720px;
   }
-  .about-promo {
+  .about-je-block__promo {
     width: 50px;
     height: 50px;
   }

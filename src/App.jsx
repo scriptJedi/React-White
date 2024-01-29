@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import * as PropTypes from "prop-types";
 
 // import icons
@@ -19,11 +19,10 @@ import Solutions from "./blocks/Solutions.jsx";
 import Hero from "./blocks/Hero";
 import Testimonials from "./blocks/Testimonials";
 import About from "./blocks/About";
-import Block1 from "./blocks/Block1.jsx";
-import Block2 from "./blocks/Block2.jsx";
-import Block3 from "./blocks/Block3.jsx";
-import Block4 from "./blocks/Block4.jsx";
-import Block5 from "./blocks/Block5.jsx";
+import Info from "./blocks/Info.jsx";
+import Core from "./blocks/Core.jsx";
+import About2 from "./blocks/About2.jsx";
+import Dynamic from "./blocks/Dynamic.jsx";
 // import Form from "./blocks/Form.jsx";
 import Cta from "./blocks/Cta.jsx";
 import About1 from "./blocks/About1.jsx";
@@ -31,33 +30,30 @@ import About1 from "./blocks/About1.jsx";
 // import styles
 import "./assets/styles/App.css";
 
-
 const App = () => {
-    return (
-        <div className="wrapper">
-            <Header/>
-            <main className="page">
-                <Hero/>
-                <About1/>
-                <Solutions/>
-                <Cta/>
-                <About/>
-                <Testimonials/>
-                <RegistrationForm/>
-                <Block1/>
-                <Block2/>
-                <Block3/>
-                <Block4/>
-                <Block5/>
-            </main>
-            <Cookie/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div className="wrapper">
+      <Header />
+      <main className="page">
+        <Hero />
+        <About1 />
+        <Solutions />
+        <Cta />
+        <About />
+        <Testimonials />
+        <RegistrationForm />
+        <Info />
+        <Core />
+        <About2 />
+        <Dynamic />
+      </main>
+      <Cookie />
+      <Footer />
+    </div>
+  );
 };
 
-export default App
-
+export default App;
 
 // // App.js
 // import React, { useState, useEffect } from 'react';
@@ -73,7 +69,7 @@ export default App
 //         // Создайте массив блоков с компонентами
 //         const blockComponents = [
 //             { blockComponent: Hero },
-//             { blockComponent: Block2 },
+//             { blockComponent: Core },
 //             // ... добавьте остальные блоки
 //         ];
 //
