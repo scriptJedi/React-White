@@ -1,60 +1,79 @@
 .core-de {
-  width: 100%;
-  padding: 100px 0;
-  background-color: #ffffff;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #ffffff;
 }
+
 .core-de__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .core-de__title {
-  font-weight: 600;
-  line-height: 23px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #999999;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #999999;
 }
+
 .core-de__subtitle {
-  font-weight: 700;
-  line-height: 45px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #2d2d2d;
-  margin-bottom: 20px;
-  text-align: center;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+    text-align: center;
 }
+
 .core-de-block {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px 50px;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+    justify-content: center;
+    margin-top: 50px;
 }
+
 .core-de-block__item {
-  max-width: 500px;
-  display: flex;
-  gap: 20px;
+    max-width: 500px;
+    display: flex;
+    gap: 20px;
 }
+
 .core-de__item:hover {
-  .core-de__icon {
-    background-color: #00a97f;
-  }
-  .core-de__icon > svg {
-    fill: #fff;
-    color: #fff;
-  }
-  .stoke-mod {
-    fill: #00a97f;
-  }
-  .stoke-mod > path {
-    stroke: #fff;
-    fill: #00a97f;
-  }
+    .core-de__icon {
+        background-color: #00a97f;
+    }
+
+    .core-de__icon > svg {
+        fill: #fff;
+        color: #fff;
+    }
+
+    .stoke-mod {
+        fill: #00a97f;
+    }
+
+    .stoke-mod > path {
+        stroke: #fff;
+        fill: #00a97f;
+    }
 }
 
 .core-de-block__descr {
-  line-height: 29px;
-  letter-spacing: 0px;
-  text-transform: none;
-  color: #666666;
+    line-height: 29px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #555c71;
+}
+
+@media (max-width: 768px) {
+    .core-de-block__item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }

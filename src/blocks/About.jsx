@@ -5,9 +5,9 @@ import aboutLarge from '../assets/img/about_large.png';
 import about01 from '../assets/img/about_1.png';
 import about02 from '../assets/img/about_2.png';
 
-const About = () => {
+const About = ({id, companyName}) => {
     return (
-        <section className="about">
+        <section id={id} className="about">
             <div className="container">
                 <div className="about__wrapper">
                     <div className="about__imgs">

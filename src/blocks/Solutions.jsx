@@ -3,7 +3,7 @@ import "../assets/styles/Solutions.css";
 import {Button} from "../components/Button.jsx";
 import CircleIcon from "../components/CircleIcon.jsx";
 
-const Solutions = () => {
+const Solutions = ({ scrollToForm, id }) => {
     const animationSpeed = 1000; // Default animation speed
 
     useEffect(() => {
@@ -43,7 +43,7 @@ const Solutions = () => {
     }
 
     return (
-        <section className="solutions">
+        <section id={id} className="solutions">
             <div className="container">
                 <div className="solutions__wrapper">
                     <div className="solutions__label">
@@ -51,7 +51,7 @@ const Solutions = () => {
                             Solutions Today for Tomorrow’s Success
                         </h2>
                         <div style={{display: 'flex'}}>
-                            <Button label={'Contact Us'}/>
+                            <Button label={'Contact Us'} onClick={scrollToForm}/>
                         </div>
                     </div>
                     <div className="solutions__text">

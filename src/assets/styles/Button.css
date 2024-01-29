@@ -50,6 +50,7 @@
 
 .button--primary:active {
     filter: brightness(.8);
+    transform: scale(.95);
 }
 
 .button--primary--small {

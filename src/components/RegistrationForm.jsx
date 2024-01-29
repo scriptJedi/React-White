@@ -1,12 +1,11 @@
-// RegistrationForm.js
-import React from 'react';
 import {Button} from "./Button.jsx";
-
+import { forwardRef } from 'react';
 import '../assets/styles/RegistrationForm.css'
 
-const RegistrationForm = () => {
+// eslint-disable-next-line react/display-name
+const RegistrationForm = forwardRef((props, ref) => {
     return (
-        <section className="main-form">
+        <section className="main-form" id="registration-form" ref={ref}>
             <div className="container">
                 <form action="" method="post" className="main-form__body body-form">
                     <div>
@@ -45,7 +44,7 @@ const RegistrationForm = () => {
                             </div>
                         </div>
 
-                        <div style={{display: 'flex', marginTop: '20px',justifyContent: 'flex-end'}}>
+                        <div style={{display: 'flex', marginTop: '20px', justifyContent: 'flex-end'}}>
                             <Button isLink={false} mode={'primary'} label={'Contact us'}/>
                         </div>
                     </div>
@@ -53,6 +52,6 @@ const RegistrationForm = () => {
             </div>
         </section>
     );
-};
+});
 
 export default RegistrationForm;

@@ -2,9 +2,9 @@ import "../assets/styles/Info.css";
 import CircleIcon from "../components/CircleIcon.jsx";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
-const Info = () => {
+const Info = ({id, companyName}) => {
   return (
-    <section className="info-be">
+    <section id={id} className="info-be">
       <div className="container">
         <div className="info-be-block">
           <div className="info-be-block__item">

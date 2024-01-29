@@ -1,12 +1,9 @@
 import "../assets/styles/Cta.css";
 import {Button} from "../components/Button.jsx";
-import React from "react";
 
-import bg_img from '../assets/img/bg.png';
-
-const Cta = () => {
+const Cta = ({ scrollToForm, id }) => {
     return (
-        <section className="cta">
+        <section id={id} className="cta">
             <div className="container">
                 <div className="cta__wrapper">
                     <h2 className="title">
@@ -18,7 +15,7 @@ const Cta = () => {
                         So, It is high time to introduce your agency digitaly.
                     </p>
                     <div style={{display: 'flex', justifyContent: 'center'}}>
-                        <Button mode={'secondary'} label={'Contact us'} isLink={true}/>
+                        <Button mode={'secondary'} label={'Contact us'} isLink={true} onClick={scrollToForm}/>
                     </div>
                 </div>
             </div>

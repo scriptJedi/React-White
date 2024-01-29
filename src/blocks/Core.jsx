@@ -1,13 +1,13 @@
 import "../assets/styles/Core.css";
 import CircleIcon from "../components/CircleIcon.jsx";
 
-const Core = () => {
+const Core = ({id, companyName}) => {
   return (
-    <section className="core-de">
+    <section id={id} className="core-de">
       <div className="container">
         <div className="core-de__wrap">
-          <h5 className="core-de__title">HERE ARE SOME OF THE</h5>
-          <h2 className="core-de__subtitle">CORE FEATURES OF THE INSIDE</h2>
+          <h2 className="core-de__subtitle title">CORE FEATURES OF THE INSIDE</h2>
+          <h5 className="core-de__title subtitle">HERE ARE SOME OF THE</h5>
           <div className="core-de-block">
             <div className="core-de-block__item">
               <CircleIcon size={"small"} iconName="mobile-screen" />

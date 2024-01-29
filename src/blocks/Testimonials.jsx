@@ -12,7 +12,7 @@ import {faStar, faArrowRight, faArrowLeft} from '@fortawesome/free-solid-svg-ico
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
-const Testimonials = () => {
+const Testimonials = ({companyName, id}) => {
     const [testimonials, setTestimonials] = useState([]);
 
     useEffect(() => {
@@ -66,7 +66,7 @@ const Testimonials = () => {
     };
 
     return (
-        <section className="testimonials">
+        <section id={id} className="testimonials">
             <div className="container">
                 <div className="testimonials__slider">
                     <div className="swiper-wrapper">
@@ -82,7 +82,7 @@ const Testimonials = () => {
                                     <div className="item-testimonials__user">
                                         <img src={testimonial.user.image} alt={testimonial.user.name}/>
                                         <h4>{testimonial.user.name}</h4>
-                                        <span>{testimonial.user.position}</span>
+                                        <span>Founder, {companyName}</span>
                                     </div>
                                 </div>
                             </div>

@@ -1,9 +1,9 @@
 import "../assets/styles/Dynamic.css";
 import CircleIcon from "../components/CircleIcon.jsx";
 
-const Dynamic = () => {
+const Dynamic = ({id, companyName}) => {
   return (
-    <section className="dynamic-ya">
+    <section id={id} className="dynamic-ya">
       <div className="container">
         <div className="dynamic-ya__wrap">
           <h2 className="dynamic-ya__title">Monetary Dynamics</h2>

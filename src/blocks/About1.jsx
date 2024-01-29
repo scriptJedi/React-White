@@ -4,9 +4,9 @@ import CircleIcon from "../components/CircleIcon.jsx";
 
 import bg_img from "../assets/img/bg.png";
 
-const About1 = () => {
+const About1 = ({id, companyName}) => {
   return (
-    <section className="about-we">
+    <section id={id} className="about-we">
       <div className="container">
         <div className="about-we__label">
           <h2 className="title">Transform, Transcend, Triumph</h2>

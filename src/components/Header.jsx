@@ -1,13 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import {Button} from './Button';
 import '../assets/styles/App.css';
 import '../assets/styles/Header.css';
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faAngleDown);
-
-const Header = () => {
+const Header = ({scrollToForm, companyName, menuItems}) => {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [isScrolling, setScrolling] = useState(false);
 
@@ -64,22 +60,29 @@ const Header = () => {
                 <div className="header__menu menu">
                     <div className="header__logo">
                         <a href="#">
-                            Company <span>Name</span>
+                            {companyName}
                         </a>
                     </div>
 
                     <nav className="menu__body">
                         <ul className="menu__list">
-                            <li className="menu__item link-hover"><a href="" className="menu__link">Services</a></li>
-                            <li className="menu__item link-hover"><a href="" className="menu__link">Portfolio</a></li>
-                            <li className="menu__item link-hover"><a href="" className="menu__link">About us</a></li>
-                            <li className="menu__item link-hover"><a href="" className="menu__link">Contacts</a></li>
+                            {menuItems.map((menuItem) => (
+                                <li key={menuItem} className="menu__item link-hover">
+                                    <a href={`#${menuItem}`} className="menu__link">
+                                        {menuItem}
+                                    </a>
+                                </li>
+                            ))}
+                            <li key="testimonials" className="menu__item link-hover">
+                                <a href={"#testimonials"} className="menu__link">
+                                    testimonials
+                                </a>
+                            </li>
                         </ul>
                     </nav>
 
                     <div className="header__actions">
-                        <Button mode={'primary'} label={'Contact us'}/>
-                        {/*<Button mode={'secondary'} label={'Contact us'}/>*/}
+                        <Button mode={'primary'} label={'Contact us'} onClick={scrollToForm}/>
                         <button type="button" className="menu__icon icon-menu" onClick={toggleMenu}><span></span>
                         </button>
                     </div>
