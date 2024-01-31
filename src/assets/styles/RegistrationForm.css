@@ -43,6 +43,15 @@
     border-bottom: 1px solid rgba(26, 36, 63, 0.2);
     font-size: 18px;
     min-height: auto;
+    transition: .3s ;
+}
+
+.body-form__group textarea:focus {
+    border-color: var(--accentColor);
+}
+
+.body-form__group input:focus {
+    border-color: var(--accentColor);
 }
 
 .body-form__group textarea {

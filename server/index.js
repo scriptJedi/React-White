@@ -2,6 +2,7 @@ import express from 'express';
 import fs from 'fs';
 import http from 'http';
 import { WebSocketServer } from 'ws';
+import archiver from 'archiver';
 
 const app = express();
 const PORT = 3000;
@@ -16,6 +17,17 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
 });
+
+const buildProject = () => {
+    const archive = archiver('zip', { zlib: { level: 9 } });
+    const output = fs.createWriteStream('landing.zip');
+
+    archive.pipe(output);
+    archive.directory('src/', false);
+    archive.finalize();
+
+    console.log('Project built successfully');
+};
 
 app.post('/adminData', (req, res) => {
     const { companyName, backgroundColor } = req.body;
@@ -48,6 +60,14 @@ app.get('/adminData', (req, res) => {
         const adminData = JSON.parse(data);
         res.json(adminData);
     });
+});
+
+app.post('/download', (req, res) => {
+    // Вызываем функцию для сборки проекта
+    buildProject();
+
+    // Отправляем клиенту путь для скачивания архива
+    res.json({ downloadPath: '/downloads/landing.zip' });
 });
 
 wss.on('connection', function connection(ws) {

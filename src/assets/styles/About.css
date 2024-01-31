@@ -59,7 +59,7 @@
 
 .content-about__icon svg {
     font-size: 20px;
-    color: #00A97F;
+    color: var(--accentColor);
 }
 
 .content-about__icon {

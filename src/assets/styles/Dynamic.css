@@ -48,7 +48,7 @@
 .dynamic-ya-block__icon > svg {
     width: 40px;
     height: 40px;
-    fill: #00a97f;
+    fill: var(--accentColor);
 }
 
 .dynamic-ya-block__title {

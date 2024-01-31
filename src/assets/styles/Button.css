@@ -1,6 +1,6 @@
 .button--primary {
     position: relative;
-    --color: #00A97F;
+    --color: var(--accentColor);
     padding: 10px 20px;
     background-color: transparent;
     border-radius: .3em;
@@ -80,16 +80,19 @@
 
 .button--secondary:hover {
     letter-spacing: 3px;
-    background-color: #00A97F;
+    background-color: var(--accentColor);
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(0, 169, 127) 0 7px 29px 0;
+    /*box-shadow: rgb(0, 169, 127) 0 7px 29px 0;*/
+    box-shadow: var(--accentColor);
 }
+
 
 .button--secondary:active {
     letter-spacing: 3px;
-    background-color: #00A97F;
+    background-color: var(--accentColor);
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(0, 169, 127) 0px 0px 0px 0px;
+    /*box-shadow: rgb(0, 169, 127) 0px 0px 0px 0px;*/
+    box-shadow: var(--accentColor);
     transform: translateY(10px);
     transition: 100ms;
 }

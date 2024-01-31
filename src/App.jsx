@@ -5,6 +5,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Cookie from "./components/Cookie.jsx";
 import RegistrationForm from "./components/RegistrationForm.jsx";
+import AdminPanel from "./blocks/AdminPanel.jsx";
 
 // import blocks
 import Hero from "./blocks/Hero";
@@ -20,7 +21,6 @@ import Solutions from "./blocks/Solutions.jsx";
 
 // import styles
 import "./assets/styles/App.css";
-import AdminPanel from "./blocks/AdminPanel.jsx";
 
 function shuffleUniqueBlocks(blocks, companyName, scrollToForm, backgroundColor) {
     const shuffledBlocks = blocks.slice();
@@ -40,12 +40,14 @@ function shuffleUniqueBlocks(blocks, companyName, scrollToForm, backgroundColor)
     });
 }
 
+
 const App = () => {
     const [companyName, setCompanyName] = useState("");
     const [backgroundColor, setBackgroundColor] = useState("");
     const [menuItems, setMenuItems] = useState([]);
     const [shuffledBlocks, setShuffledBlocks] = useState([]);
     const formRef = useRef(null);
+    let accentColor;
 
     useEffect(() => {
         fetch("http://localhost:3000/adminData")
@@ -57,13 +59,17 @@ const App = () => {
                 }
             })
             .then((data) => {
+                console.log(data);
                 setCompanyName(data.companyName);
                 setBackgroundColor(data.backgroundColor);
+                accentColor = data.backgroundColor;
+                document.documentElement.style.setProperty('--accentColor', accentColor);
             })
             .catch((error) => {
                 console.error("Error:", error);
             });
     }, []);
+
 
 
     useEffect(() => {
@@ -121,7 +127,7 @@ const App = () => {
 
     return (
         <div className="wrapper">
-            <AdminPanel/>
+            <AdminPanel shuffledBlocks={shuffledBlocks} />
             <Header scrollToForm={scrollToForm} companyName={companyName} menuItems={menuItems} />
             <main className="page">
                 <Hero key={"hero"} backgroundColor={backgroundColor} />

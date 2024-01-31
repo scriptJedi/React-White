@@ -13,7 +13,7 @@
 
 .CircleIcon svg {
     font-size: 30px;
-    color: #00A97F;
+    color: var(--accentColor);
 }
 
 .CircleIcon--big {

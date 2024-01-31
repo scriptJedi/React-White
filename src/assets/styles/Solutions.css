@@ -43,7 +43,7 @@
 }
 
 .solutions__item:hover {
-    border-color: #171f36;
+    border-color: var(--accentColor);
 }
 
 .item-solutions {

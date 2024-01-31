@@ -16,10 +16,12 @@
     z-index: 11;
     color: #fff;
     letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .header__logo span {
-    color: #00A97F;
+    color: var(--accentColor);
 }
 
 .header__logo img {
@@ -70,13 +72,12 @@
 }
 
 
-.menu__item:hover {
-    color: #00A97F;
-}
-
 .menu__link {
     font-weight: 500;
     transition: color 0.3s ease 0s;
+}
+.menu__link:hover {
+    color: var(--accentColor);
 }
 
 
@@ -105,7 +106,7 @@
 
 .header.scrolling.reveal-header {
     .menu__item {
-        color: #00A97F;
+        color: var(--accentColor);
     }
 }
 
@@ -132,7 +133,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #00A97F;
+    background: var(--accentColor);
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -167,6 +168,7 @@
 @media (max-width: 992px) {
     .menu__item {
         margin: 0 5px;
+        font-size: 14px;
     }
 }
 

@@ -17,7 +17,7 @@
 }
 .about-je__devider {
   margin-bottom: 50px;
-  background-color: #00a97f;
+  background-color: var(--accentColor);
   width: 68px;
   height: 3px;
 }

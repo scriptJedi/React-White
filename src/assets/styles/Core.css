@@ -44,7 +44,7 @@
 
 .core-de__item:hover {
     .core-de__icon {
-        background-color: #00a97f;
+        background-color: var(--accentColor);
     }
 
     .core-de__icon > svg {
@@ -53,12 +53,12 @@
     }
 
     .stoke-mod {
-        fill: #00a97f;
+        fill: var(--accentColor);
     }
 
     .stoke-mod > path {
         stroke: #fff;
-        fill: #00a97f;
+        fill: var(--accentColor);
     }
 }
 
