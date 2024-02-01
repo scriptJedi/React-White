@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import {useEffect, useRef, useState} from "react";
 
 // import components
 import Header from "./components/Header.jsx";
@@ -47,29 +47,25 @@ const App = () => {
     const [menuItems, setMenuItems] = useState([]);
     const [shuffledBlocks, setShuffledBlocks] = useState([]);
     const formRef = useRef(null);
-    let accentColor;
 
     useEffect(() => {
-        fetch("http://localhost:3000/adminData")
-            .then((response) => {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    throw new Error("Error fetching data");
+        const fetchData = async () => {
+            try {
+                const savedData = localStorage.getItem('adminData');
+                if (savedData) {
+                    const data = JSON.parse(savedData);
+                    setCompanyName(data.companyName);
+                    setBackgroundColor(data.backgroundColor);
+                    document.documentElement.style.setProperty('--accentColor', data.backgroundColor);
+                    console.log('Data loaded successfully from local storage');
                 }
-            })
-            .then((data) => {
-                console.log(data);
-                setCompanyName(data.companyName);
-                setBackgroundColor(data.backgroundColor);
-                accentColor = data.backgroundColor;
-                document.documentElement.style.setProperty('--accentColor', accentColor);
-            })
-            .catch((error) => {
+            } catch (error) {
                 console.error("Error:", error);
-            });
-    }, []);
+            }
+        };
 
+        fetchData();
+    }, []);
 
 
     useEffect(() => {
@@ -122,21 +118,21 @@ const App = () => {
     ];
 
     const scrollToForm = () => {
-        formRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+        formRef.current.scrollIntoView({behavior: "smooth", block: "center"});
     };
 
     return (
         <div className="wrapper">
-            <AdminPanel shuffledBlocks={shuffledBlocks} />
-            <Header scrollToForm={scrollToForm} companyName={companyName} menuItems={menuItems} />
+            <AdminPanel shuffledBlocks={shuffledBlocks}/>
+            <Header scrollToForm={scrollToForm} companyName={companyName} menuItems={menuItems}/>
             <main className="page">
-                <Hero key={"hero"} backgroundColor={backgroundColor} />
+                <Hero key={"hero"} backgroundColor={backgroundColor}/>
                 {shuffledBlocks}
-                <Testimonials companyName={companyName} backgroundColor={backgroundColor} id="testimonials" />
-                <RegistrationForm ref={formRef} />
+                <Testimonials companyName={companyName} backgroundColor={backgroundColor} id="testimonials"/>
+                <RegistrationForm ref={formRef}/>
             </main>
-            <Cookie />
-            <Footer companyName={companyName} />
+            <Cookie/>
+            <Footer companyName={companyName}/>
         </div>
     );
 };
