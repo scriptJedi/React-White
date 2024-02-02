@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import '../assets/styles/AdminPanel.css';
 
-const AdminPanel = ({ shuffledBlocks }) => {
+const AdminPanel = ({ onGenerate }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [companyName, setCompanyName] = useState('');
     const [backgroundColor, setBackgroundColor] = useState('');
@@ -10,54 +10,16 @@ const AdminPanel = ({ shuffledBlocks }) => {
         setIsOpen(!isOpen);
     };
 
-    const handleGenerate = async () => {
+    const handleGenerate = () => {
         try {
-            const response = await fetch('http://localhost:3000/adminData', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    companyName,
-                    backgroundColor,
-                }),
-            });
-
-            if (response.ok) {
-                console.log('Data saved successfully');
-            } else {
-                console.error('Failed to save data');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-        }
-    };
-
-    const handleDownload = async () => {
-        try {
-            const response = await fetch('http://localhost:3000/download', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    companyName,
-                    backgroundColor,
-                    blocks: shuffledBlocks,
-                }),
-            });
-
-            if (response.ok) {
-                const {downloadPath} = await response.json();
-                const link = document.createElement('a');
-                link.href = downloadPath;
-                link.setAttribute('download', 'landing.zip');
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            } else {
-                console.error('Failed to download project');
-            }
+            const dataToSave = {
+                companyName: companyName,
+                backgroundColor: backgroundColor
+            };
+            const jsonData = JSON.stringify(dataToSave);
+            localStorage.setItem('adminData', jsonData);
+            onGenerate();
+            console.log('Data saved successfully to local storage');
         } catch (error) {
             console.error('Error:', error);
         }
@@ -109,9 +71,8 @@ const AdminPanel = ({ shuffledBlocks }) => {
                     <input type="text" placeholder="Enter or select color" value={backgroundColor}
                            onChange={handleColorChange}/>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <button className="admin-button" onClick={handleGenerate}>Generate</button>
-                    <button className="admin-button" onClick={handleDownload}>Download</button>
                 </div>
             </div>
         </>
