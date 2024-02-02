@@ -32,7 +32,7 @@ const App = () => {
     const shuffleUniqueBlocks = (blocks, companyName, scrollToForm, backgroundColor) => {
         const shuffledBlocks = blocks.slice();
         shuffledBlocks.sort(() => Math.random() - 0.4);
-    
+
         return shuffledBlocks.slice(0, 4).map((block) => {
             const BlockComponent = block.blockComponent;
             return (
